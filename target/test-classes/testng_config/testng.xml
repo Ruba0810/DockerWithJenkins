@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Cucumber Test Suite" parallel="tests" thread-count="2">
+    
+    <!-- This tag defines which tests to run -->
+    <test name="Cucumber Tests">
+        <parameter name="browsername" value="chrome" />
+
+        <!-- Specify the test class where the Cucumber test runner is defined -->
+        <classes>
+            <class name="com.cucumber.testng.runner.TestRunner" />
+        </classes>
+        
+        <!-- Specify TestNG listener for Extent Report -->
+        <listeners>
+            <listener class-name="com.cucumber.testng.listner.IListener" />
+        </listeners>
+    </test>
+
+</suite>
